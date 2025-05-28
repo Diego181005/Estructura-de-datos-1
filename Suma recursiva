@@ -1,0 +1,21 @@
+#include<iostream>
+
+using namespace std;
+
+int Suma(int n);
+
+int main() {
+
+	int n;
+	cout<<"Ingre hasta que nuimero sumar: ";
+	cin>>n;
+	cout<<"La suma recursiva es: "<<Suma(n);
+
+}
+
+int Suma(int n){
+    if(n==1)
+        return 1;
+    else
+    return Suma(n-1)+n;
+}
